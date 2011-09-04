@@ -28,7 +28,7 @@ if (!$user_email) {
 
 $subject = "Share: $title";
 $body = "$trg_user,\nCheck this out: $url";
-$headers = "From: share-robot@thosedamnbooks.com\r\n" .
+$headers = "From: $from\r\n" .
      "X-Mailer: php";
 
 if (mail($user_email, $subject, $body, $headers)) {
