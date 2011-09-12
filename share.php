@@ -16,8 +16,9 @@ if (!$url) {
 
 $title = $_GET['title'];
 if (!$title) {
-   echo "alert('cannot share. no title.');";
-   exit(1);   
+   $title = $url;
+   #echo "alert('cannot share. no title.');";
+   #exit(1);   
 }
 
 $user_email = $users[$trg_user];

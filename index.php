@@ -3,6 +3,12 @@
 require_once("config.php");
 
 ?>
+<html>
+<head>
+<title>Share bookmarklets</title>
+</head>
+<body>
+Drag link to you bookmark toolbar to install.
 <ul>
 <?php
 foreach ($users as $user => $email) {
@@ -12,4 +18,6 @@ $code = "javascript:(function(){ISRIL_H='f15c';ISRIL_SCRIPT=document.createEleme
 ?>
 </ul>
 
+</body>
+</html>
 
